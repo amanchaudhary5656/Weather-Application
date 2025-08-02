@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="weather-card">
+      <div class="search-bar">
+        <input type="text" id="cityInput" placeholder="Enter city..." />
+        <button onclick="getWeather()">Search</button>
+      </div>
+      <div class="main-info">
+        <div class="temp" id="temperature">--°C</div>
+        <div class="desc" id="description">---</div>
+      </div>
+      <div class="extra">
+        <div class="item">Humidity: <span id="humidity">--%</span></div>
+        <div class="item">Wind: <span id="wind">-- km/h</span></div>
+      </div>
+      <div class="forecast-section">
+        <h3>Hourly Forecast</h3>
+        <div class="hourly" id="hourlyForecast">--</div>
+      </div>
+      <div class="uv-section">
+        <h3>UV Index</h3>
+        <div class="uv-bar">
+          <div class="uv-fill" id="uvFill" style="width: 0%; background: yellow;"></div>
+        </div>
+        <p id="uvText">UV Index: --</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
